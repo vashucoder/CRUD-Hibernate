@@ -13,9 +13,6 @@ import lombok.Setter;
 
 @Entity 
 @Table(name="HCL_emp")
-@Getter
-@Setter
-
 
 public class Employee {
 
@@ -43,6 +40,38 @@ public class Employee {
 		this.salary = salary;
 		this.add = add;
 	}
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	public Address getAdd() {
+		return add;
+	}
+
+	public void setAdd(Address add) {
+		this.add = add;
+	}
+
 	public Employee() {}
 	
 	
